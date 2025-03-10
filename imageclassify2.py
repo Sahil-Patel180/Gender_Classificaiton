@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Set up paths
-train_data_dir = 'C:/Users/naiti/Desktop/Projects/Python model/GENDER CLASSIFICATION/testing image'
-test_data_dir = 'C:/Users/naiti/Desktop/Projects/Python model/GENDER CLASSIFICATION/training image'
+train_data_dir = '/testing image'#instead of training used testing because more number of images
+test_data_dir = '/training image'
 
 # Set up parameters
 img_width, img_height = 224, 224
@@ -102,7 +102,7 @@ print(f'Test accuracy: {test_acc:.4f}')
 # plt.show()
 
 # Save the model
-#model.save('gender_classification_model.h5')
+model.save('gender_classification_model.h5')
 
 # Function to predict gender for any image
 def predict_gender(image_path):
@@ -118,5 +118,5 @@ def predict_gender(image_path):
         return "Female"
 
 # Example usage
-test_image_path = 'C:/Users/naiti/Desktop/Projects/Python model/GENDER CLASSIFICATION/test image/kayadu lohar.jpg'
+test_image_path = '/image_path_want_to_identify'
 print(f"Predicted gender: {predict_gender(test_image_path)}")
