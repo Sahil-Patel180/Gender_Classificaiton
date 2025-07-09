@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Set up paths
-train_data_dir = 'C:/Users/naiti/Desktop/Projects/Python model/gender classification/training image'
-test_data_dir = 'C:/Users/naiti/Desktop/Projects/Python model/gender classification/testing image'
+train_data_dir = '/training image'
+test_data_dir = '/testing image'
 
 # Set up parameters
 img_width, img_height = 224, 224
