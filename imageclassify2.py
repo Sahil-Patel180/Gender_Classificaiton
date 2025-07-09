@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Set up paths
-train_data_dir = 'C:/Users/naiti/Desktop/Projects/Python model/GENDER CLASSIFICATION/testing image'
-test_data_dir = 'C:/Users/naiti/Desktop/Projects/Python model/GENDER CLASSIFICATION/training image'
+train_data_dir = '/testing image'
+test_data_dir = '/training image'
 
 # Set up parameters
 img_width, img_height = 224, 224
@@ -118,5 +118,5 @@ def predict_gender(image_path):
         return "Female"
 
 # Example usage
-test_image_path = 'C:/Users/naiti/Desktop/Projects/Python model/GENDER CLASSIFICATION/test image/kayadu lohar.jpg'
+test_image_path = '/test image/sample_image.jpg'
 print(f"Predicted gender: {predict_gender(test_image_path)}")
