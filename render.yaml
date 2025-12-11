@@ -15,7 +15,7 @@ services:
     healthCheckPath: /api/stats
 
   # Frontend Static Site
-  - type: static
+  - type: web
     name: gender-classifier-frontend
     runtime: static
     env: static
